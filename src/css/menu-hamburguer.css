@@ -1,0 +1,121 @@
+header nav ul {
+    display: flex;
+}
+
+header nav ul li a {
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #FF8303;
+}
+
+/*   RESPONSIVE   */
+
+/* menu hamburguer - começando pela configuração da linha do meio*/
+header .menu {
+    display: none;
+    width: 60px;
+    height: 60px;
+
+    align-self: flex-end;  /* deixar o menu sempre à direita*/
+}
+
+header nav label{
+    display: flex;
+    flex-direction: column; /*mostrar o nav abaixo do menu hamburguer*/
+}
+
+header input {
+    display: none;
+    /* apaga o checkbox do input*/
+}
+
+header .hamburguer {
+    background-color: #000;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    left: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+
+/*linhas de cima e de baixo do menu hamburguer*/
+header .hamburguer:before {
+    top: -10px; /* sobre -10px em relação a onde ele está*/
+}
+
+header .hamburguer:after {
+    bottom: -10px; /* desce -10px em relação a onde ele está*/
+}
+
+header .hamburguer:before,
+header .hamburguer:after {
+    background-color: #000;
+    position: relative;
+    content: "";
+    display: block;
+    width: 100%; /* vai estar sempre a 100% da largura e altura do menu*/
+    height: 100%;
+    transition: 0.2s ease-in-out;
+}
+
+/*--- menu hamburguer clicado  - quando clicar no hamburguer, o hamburguer vira um X*/
+
+header input:checked~label .hamburguer{
+    transform: rotate(45deg);
+}
+
+header input:checked~label .hamburguer:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+header input:checked~label .hamburguer:after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+/* --- menu hamburguer vai aparecer só quando a tela for no máimo 900px*/
+@media(max-width: 900px) {
+    header .menu {
+        display: block;
+    }
+
+    header nav ul { /* oculta os itens do menu quando for clicado*/
+        display: none;
+    }
+
+/* --- quando o hamburguer for clicado, a lista ul volta a aparecer(os ítens do menu) */
+    header input:checked ~ul{
+        display: block;
+    }
+
+    header nav{
+        position: absolute;
+        top: 8px;
+        right: 20px;
+        z-index: 1; /*o nav vai aparecer por cima de todo o conteúdo da página*/
+    }
+
+    /*"quadradinho branco dos itens do menu*/
+    header nav ul{ 
+        width: 200px;
+        padding: 20px;
+        background-color: #fff;
+    }
+
+    header nav ul a{
+        display: block; /*para as alterações aparecerem*/
+        text-align: center;
+        padding: 20px;
+    
+    }
+}

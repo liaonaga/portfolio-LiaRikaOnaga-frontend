@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconcolata', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    /*para ficar mais fácil de trabalhar com font-size REM*/
+}
+
+body{
+    font-family: 'Inconsolata', monospace;
+    background-color: #FFFBFB;
+
+    display: grid;
+
+    grid-template-areas: "header header header header"
+        "hero hero hero hero"
+        "about about about about"
+        "services services services services"
+        "projects projects projects projects"
+        "footer footer footer footer";
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.limita-secao{
+    max-width: 1440px;
+}
+
+/*   HEADER   */
+header h2, .hero h1, .secao-titulo{
+    font-family: 'JetBrains Mono', monospace;
+}
+
+header {
+    background-color: #fff;
+    grid-area: header;
+}
+
+header .header-container {
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+    /* coloca o menu na direita e o logo na esquerda*/
+    align-items: center;
+    /* alinha o logo com o menu*/
+    min-height: 75px;
+    /**altura mínima do header para que no mobile não fique estranho*/
+}
+
+header h2 {
+    font-size: 1.8rem;
+    transition: 0.3s;
+    /* deixar a trasição para o hover mais suave */
+}
+
+header a:hover h2 {
+    color: coral;
+}
+/*   HERO   */
+
+
+
+/*   SOBRE   */
+
+/*   PROJETOS   */
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.projeto-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px;
+    width: 600px;
+    height: 350px;
+}
+
+.projetos .projeto-card {
+    transition: .3s;
+    min-width: 30%;
+}
+
+/* .projetos .projeto-descricao{
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+} */
+
+.projetos .projeto-tec{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0px;
+    list-style: none;
+}
+
+.projetos .projeto-tec li {
+    margin: 0px 20px 5px 0px;
+    white-space: nowrap;
+}
+
+
+.projetos .projetos-links a svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+/*   HABILIDADES   */
+
+/* .habilidades picture{
+    display: flex;
+} */
+
+.habilidades img {
+	display: block;
+	max-width: 300px;
+	margin: 20px auto 40px auto;
+	transition: .3s;
+	
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray;
+}
+
+.habilidades img:hover {
+	-webkit-filter: none;	
+	filter: none;	
+}
