@@ -32,6 +32,10 @@ body{
 
 .limita-secao{
     max-width: 1440px;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /*   HEADER   */
@@ -56,7 +60,7 @@ header .header-container {
 }
 
 header h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     transition: 0.3s;
     /* deixar a trasição para o hover mais suave */
 }
