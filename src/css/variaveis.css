@@ -1,0 +1,16 @@
+:root {
+    --cor-primaria: #F2A30F;
+    --cor-secundaria: #377015;
+    --cor-cinza-escuro:  #595959;
+    --cor-cinza-claro: #353535;
+    --cor-branca: #F2F2F2;
+}
+
+:root{
+    --fonte-primaria: 'Inconsolata', sans serif;
+    --fonte-secundaria: JetBrains Mono, sans serif;
+    --fonte-gigante: 4.5rem;
+    --fonte-grande: 3rem;
+    --fonte-grande: 2.4rem;
+    --fonte-normal1: 1.6rem;
+}

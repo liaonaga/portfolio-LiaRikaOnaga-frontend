@@ -1,34 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap');
 
-*{
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inconcolata', sans-serif;
-}
-
-html {
-    font-size: 62.5%;
-    /*para ficar mais fácil de trabalhar com font-size REM*/
-}
-
-body{
-    font-family: 'Inconsolata', monospace;
-    background-color: #FFFBFB;
-
-    display: grid;
-
-    grid-template-areas: "header header header header"
-        "hero hero hero hero"
-        "about about about about"
-        "services services services services"
-        "projects projects projects projects"
-        "footer footer footer footer";
-    grid-template-columns: repeat(4, 1fr);
-    font-size: 1.6rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-}
 
 .limita-secao{
     max-width: 1440px;

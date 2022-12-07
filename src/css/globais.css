@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconcolata', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    /*para ficar mais fácil de trabalhar com font-size REM*/
+}
+
