@@ -8,9 +8,9 @@
 
 :root{
     --fonte-primaria: 'Inconsolata', monospace;
-    --fonte-secundaria: JetBrains Mono, sans serif;
+    --fonte-secundaria:'Roboto Mono', monospace;
     --fonte-gigante: 4.5rem;
-    --fonte-grande: 3rem;
+    --fonte-extra-grande: 3rem;
     --fonte-grande: 2.4rem;
     --fonte-normal: 1.6rem;
 }

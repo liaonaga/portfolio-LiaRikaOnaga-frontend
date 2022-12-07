@@ -1,0 +1,159 @@
+.header{
+    padding: 15px 15px;
+}
+
+.header .logo{
+    font-family: var(--fonte-secundaria);
+    font-size: var(--fonte-grande);
+    color: var(--cor-cinza-escuro);
+    font-weight: bold;
+    line-height: 65px;
+    letter-spacing: 1px;
+    transition: 0.2s;
+    
+}
+
+.header a:hover .logo{
+    color: var(--cor-primaria);
+    text-decoration: underline;
+}
+
+.header nav ul {
+    display: flex;
+}
+
+.header nav li a{
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--cor-cinza-escuro);
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    transition: 0.2s;
+}
+
+.header nav ul li a:hover{
+    color: var(--cor-primaria);
+    font-size: 2.1rem;
+}
+
+.header nav .botao{
+    background-color: var(--cor-primaria);
+    border-radius: 50px;
+
+    transform: 0.2s;
+}
+
+.header nav .botao:hover {
+    background-color: var(--cor-primaria);
+    color: #fff;
+}
+
+/*   MENU HAMBURGUER   */
+.header .menu {
+    display: none;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    position: absolute;
+}
+
+.header nav label {
+    display: flex;
+    flex-direction: column;
+}
+
+.header .hamburguer {
+    background-color: var(--cor-cinza-escuro);
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    left: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+.header .hamburguer:before,
+.header .hamburguer:after {
+    background-color: var(--cor-cinza-escuro);
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: 0.2s ease-in-out;
+}
+
+.header .hamburguer:before{
+    top: -10px;
+}
+
+.header .hamburguer:after{
+    bottom: -10px;
+}
+
+.header input {
+    display: none;
+}
+
+.header input:checked ~ label .hamburguer {
+    transform: rotate(45deg);
+    background-color: var(--cor-primaria);
+}
+.header input:checked ~ label .hamburguer:before {
+    transform: rotate(90deg);
+    top: 0;
+    background-color: var(--cor-primaria);
+}
+
+.header input:checked ~ label .hamburguer:after {
+    transform: rotate(90deg);
+    bottom: 0;
+    background-color: var(--cor-primaria);
+}
+
+@media(max-width: 1280px){
+    .header {
+        padding: var(--mobile-padding);
+    }
+
+    .header .menu{
+        display: block;
+    }
+
+    .header nav ul{
+        display: none;
+    }
+
+    .header nav input:checked ~ ul{
+        display: block;
+    }
+
+    .header nav{
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        z-index: 1;
+    }
+
+    .header nav ul {
+        display: none;
+        background-color: var(--cor-branca);
+        padding: 30px 30px 120px 120px;
+        border-radius: 0 0 0 150%;
+
+        transition: 0.2s;
+    }
+
+    .header nav ul li a {
+        color: var(--cor-cinza-escuro);
+        text-align: center;
+        padding: 20px;
+        display: block;
+    }
+
+    .header nav .botao{
+        background-color: var(--cor-primaria);
+    }
+}

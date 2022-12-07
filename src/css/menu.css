@@ -32,7 +32,6 @@ header nav label{
 
 header input {
     display: none;
-    /* apaga o checkbox do input*/
 }
 
 header .hamburguer {
@@ -73,12 +72,12 @@ header input:checked~label .hamburguer{
     transform: rotate(45deg);
 }
 
-header input:checked~label .hamburguer:before {
+header input:checked ~ label .hamburguer:before {
     transform: rotate(90deg);
     top: 0;
 }
 
-header input:checked~label .hamburguer:after {
+header input:checked ~ label .hamburguer:after {
     transform: rotate(90deg);
     bottom: 0;
 }
@@ -100,7 +99,7 @@ header input:checked~label .hamburguer:after {
 
     header nav{
         position: absolute;
-        top: 8px;
+        top: 30px;
         right: 20px;
         z-index: 1; /*o nav vai aparecer por cima de todo o conteúdo da página*/
     }
