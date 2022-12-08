@@ -39,7 +39,7 @@
 
 .header nav .botao{
     background-color: var(--cor-primaria);
-    border-radius: 50px;
+    border-radius: 5px;
 
     transform: 0.2s;
 }

@@ -11,6 +11,8 @@
 
     <link rel="stylesheet" href="src/css/globais.css">
     <link rel="stylesheet" href="src/css/estilos.css">
+    <link rel="stylesheet" href="src/css/capa.css">
+
 
     <script src="https://kit.fontawesome.com/00a67a149e.js" crossorigin="anonymous"></script>
 </head>
@@ -39,51 +41,57 @@
             </div>
         </div>
     </header>
-    <section id="hero" class="hero limita-secao">
-        <div class="hero-texto">
-            <p>Olá, meu nome é</p>
-            <h1>Lia Onaga =)</h1>
-            <p>sou desenvolvedora front end.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis recusandae animi ratione odio tempora explicabo! Quos vero architecto ab, et laborum saepe quod consequuntur eius adipisci cupiditate minima hic officiis!</p>
-            <button><a href="#projetos">Veja os meus projetos!</a></button>
-        </div>
-        <div class="hero-codigo">
-            <p>texto de código </p>
-            <p>estudar como faz</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi aliquam dolor in magni laboriosam nisi quae. Dolor, excepturi ex. Odio libero nam modi ad ducimus et alias quae doloremque delectus?</p>
-        </div>
-    </section>
-    <section id="sobre" class="sobre limita-secao">
-        <div class="sobre-texto">
-            <h2 class="secao-titulo">Sobre</h2>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis recusandae animi ratione odio tempora explicabo! 
-
-                Quos vero architecto ab, et laborum saepe quod consequuntur eius adipisci cupiditate minima hic officiis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis recusandae animi ratione odio tempora explicabo! 
-                
-                Quos vero architecto ab, et laborum saepe quod consequuntur eius adipisci cupiditate minima hic officiis!
-                
-                Quos vero architecto ab, et laborum saepe quod consequuntur eius adipisci cupiditate minima hic officiis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis recusandae animi ratione odio tempora explicabo! 
-            </p>
-            <p>Aqui estão algumas tecnologias com as quais tenho trabalhado recentemente:</p>
-            <ul>
-                <li>JavaScript (ES6+)</li>
-                <li>CSS</li>
-                <li>HTML</li>
-            </ul>
-            <button>
-                <a href="src/Currículo - Lia Rika Onaga - Desenvolvedora Frontend Junior (1).pdf">Baixar cv</a>
-            </button>
-        </div>
-        <div class="sobre-foto">
-            <a href="https://www.linkedin.com/in/liaonaga/">
-                <img src="qsrc/img/2021 07 17 foto_Lia_Rika_Onaga_Developer_Front_End_Web_HTML_CSS_Javascript_Desenvolvedora_Dev_Programadora-height800px.jpg" alt="Foto de Lia Rika Onaga" class="sobre-foto-img">
-            </a>
-        </div>
-    </section>
-    <section id="projetos" class="projetos limita-secao">
-        <h2 class="secao-titulo">Alguns projetos que construi</h2>
+    <section id="capa" class="capa">
         <div class="container">
+            <div class="row full-screen justify-content-betweeen alinhar-itens-no-centro">
+                <div class="texto-capa">
+                    <p>Olá, meu nome é</p>
+                    <h1>Lia Onaga =)</h1>
+                    <h2>sou desenvolvedora front end.</h2>
+                    <p class="descricao-capa">Lorem ip</p>
+
+                    <a class="botao botao-capa" href="#projetos">Veja os meus projetos!</a>
+                </div>
+
+                
+                <div class="imagem-capa">
+                        <p>texto de código </p>
+                        <p>estudar como faz</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos architecto quibusdam aliquid laudantium obcaecati atque asperiores itaque, earum magni mollitia est dolorum nostrum ipsam vitae esse. Unde corporis harum eius!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit laboriosam est maxime illo suscipit saepe, expedita minus officiis vitae? Facere doloremque repudiandae consequuntur sequi non saepe tenetur illum ea fugiat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quae! Quae omnis quasi esse amet, quas hic soluta, voluptates cumque distinctio cum dicta, velit fugit fuga dolores quisquam dolorum qui?
+                        </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="texto-sobre">
+                    <h2 class="secao-titulo">Sobre</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor ratione, iure reiciendis dignissimos ipsum magni voluptates deserunt obcaecati itaque dolorum fugiat corrupti perspiciatis perferendis corporis vitae quia. Sequi, quibusdam magnam.</p>
+                    <p>Aqui estão algumas tecnologias com as quais tenho trabalhado recentemente:</p>
+                    <ul>
+                        <li>JavaScript (ES6+)</li>
+                        <li>CSS</li>
+                        <li>HTML</li>
+                    </ul>
+                    <a class="botao" href="src/Currículo - Lia Rika Onaga - Desenvolvedora Frontend Junior (1).pdf">Baixar cv</a>
+                </div>
+
+               
+                <div class="imagem-sobre">
+                    <div class="img-box inner-shadow">
+                        <a href="https://www.linkedin.com/in/liaonaga/">
+                            <img src="src/img/2021 07 17 foto_Lia_Rika_Onaga_Developer_Front_End_Web_HTML_CSS_Javascript_Desenvolvedora_Dev_Programadora-height800px.jpg" alt="Foto do perfil de Lia Rika Onaga" class="outer-shadow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projetos" class="projetos">
+        <div class="container">
+            <h2 class="secao-titulo">Alguns projetos que construi</h2>
             <div class="todos-projetos">
                 <div class="projeto-card">
                     <div class="projeto-img">
@@ -156,82 +164,85 @@
 
     </section>
     <section id="habilidades" class="habilidades limita-secao">
-        <h2 class="secao-titulo">Habilidades</h2>
-        <div class="habilidades-icones">
-            <figure class="habilidade-imagem">
-                <img src="src/img/icon html -- hover.png" alt="imagem logo HTML">
-                <figcaption class="habibilidade-textos">
-                    <h2 class="habilidade-titulo">HTML - Hyper Text Markup Language</h2>
-                    <p class="habilidade-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatum pariatur, sit voluptate consequatur omnis provident voluptas debitis unde odio natus qui quis animi libero officia laboriosam earum enim temporibus.</p>
-                </figcaption>
-            </figure>
-            <figure class="habilidade-imagem">
-                <img src="src/img/icon css - hover.png" alt="imagem logo CSS">
-                <figcaption class="habibilidade-textos">
-                    <h2 class="habilidade-titulo">CSS - Cascading Style Sheets</h2>
-                    <p class="habilidade-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatum pariatur, sit voluptate consequatur omnis provident voluptas debitis unde odio natus qui quis animi libero officia laboriosam earum enim temporibus.</p>
-                </figcaption>
-            </figure>
-            <figure class="habilidade-imagem">
-                <img src="src/img/icon js -- hover.png" alt="imagem logo Javascript">
-                <figcaption class="habibilidade-textos">
-                    <h2 class="habilidade-titulo">Javascript</h2>
-                    <p class="habilidade-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatum pariatur, sit voluptate consequatur omnis provident voluptas debitis unde odio natus qui quis animi libero officia laboriosam earum enim temporibus.</p>
-                </figcaption>
-            </figure>
-            <figure class="habilidade-imagem">
-                <img src="src/img/icon git -- hover.png" alt="imagem logo Git">
-                <figcaption class="habibilidade-textos">
-                    <h2 class="habilidade-titulo">Git</h2>
-                    <p class="habilidade-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatum pariatur, sit voluptate consequatur omnis provident voluptas debitis unde odio natus qui quis animi libero officia laboriosam earum enim temporibus.</p>
-                </figcaption>
-            </figure>
+        <div class="container">
+            <h2 class="secao-titulo">Habilidades</h2>
+            <div class="habilidades-icones">
+                <figure class="habilidade-imagem">
+                    <img src="src/img/icon html -- hover.png" alt="imagem logo HTML">
+                    <figcaption class="habibilidade-textos">
+                        <h2 class="habilidade-titulo">HTML - Hyper Text Markup Language</h2>
+                        <p class="habilidade-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatum pariatur, sit voluptate consequatur omnis provident voluptas debitis unde odio natus qui quis animi libero officia laboriosam earum enim temporibus.</p>
+                    </figcaption>
+                </figure>
+                <figure class="habilidade-imagem">
+                    <img src="src/img/icon css - hover.png" alt="imagem logo CSS">
+                    <figcaption class="habibilidade-textos">
+                        <h2 class="habilidade-titulo">CSS - Cascading Style Sheets</h2>
+                        <p class="habilidade-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatum pariatur, sit voluptate consequatur omnis provident voluptas debitis unde odio natus qui quis animi libero officia laboriosam earum enim temporibus.</p>
+                    </figcaption>
+                </figure>
+                <figure class="habilidade-imagem">
+                    <img src="src/img/icon js -- hover.png" alt="imagem logo Javascript">
+                    <figcaption class="habibilidade-textos">
+                        <h2 class="habilidade-titulo">Javascript</h2>
+                        <p class="habilidade-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatum pariatur, sit voluptate consequatur omnis provident voluptas debitis unde odio natus qui quis animi libero officia laboriosam earum enim temporibus.</p>
+                    </figcaption>
+                </figure>
+                <figure class="habilidade-imagem">
+                    <img src="src/img/icon git -- hover.png" alt="imagem logo Git">
+                    <figcaption class="habibilidade-textos">
+                        <h2 class="habilidade-titulo">Git</h2>
+                        <p class="habilidade-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatum pariatur, sit voluptate consequatur omnis provident voluptas debitis unde odio natus qui quis animi libero officia laboriosam earum enim temporibus.</p>
+                    </figcaption>
+                </figure>
+            </div>
         </div>
     </section>
-    <section id="contato" class="contato limita-secao">
-        <h2 class="secao-titulo">Contato</h2>
+    <section id="contato" class="contato">
         <div class="container">
-            <div class="icons">
-                <div class="icon">
-                <a href="mailto:liarikao2@gmail.com" target="_blank">
-                    <i class="fa-regular fa-envelope"></i>
-                </a>
-                <a href="mailto:liarikao2@gmail.com" target="_blank"><p>E-mail</p></a>
-                <a href="mailto:liarikao2@gmail.com.com" target="_blank"><p>liarikao2@gmail.com</p></a>
+            <h2 class="secao-titulo">Contato</h2>
+            < class="container">
+                <div class="icons">
+                    <div class="icon">
+                    <a href="mailto:liarikao2@gmail.com" target="_blank">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                    <a href="mailto:liarikao2@gmail.com" target="_blank"><p>E-mail</p></a>
+                    <a href="mailto:liarikao2@gmail.com.com" target="_blank"><p>liarikao2@gmail.com</p></a>
+                    </div>
+                    <div class="icon">
+                    <a href="https://api.whatsapp.com/send?phone=5511999445321" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=5511999445321" target="_blank">
+                        <p>Telefone/Whatsapp</p>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=5511999445321" target="_blank"><p>(11) 99944-5321</p></a>
+                    </div>
+                    <div class="icon">
+                    <a href="https://www.linkedin.com/in/liaonaga/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/liaonaga/" target="_blank">
+                        <p>Linkedin</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/liaonaga/" target="_blank">
+                        <p>@liaonaga</p>
+                    </a>
+                    </div>
+                    <div class="icon">
+                    <a href="https://github.com/liaonaga" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://github.com/liaonaga" target="_blank">
+                        <p>Github</p>
+                    </a>
+                    <a href="https://github.com/liaonaga" target="_blank">
+                        <p>@liaonaga</p>
+                    </a>
+                    </div>
                 </div>
-                <div class="icon">
-                <a href="https://api.whatsapp.com/send?phone=5511999445321" target="_blank">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-                <a href="https://api.whatsapp.com/send?phone=5511999445321" target="_blank">
-                    <p>Telefone/Whatsapp</p>
-                </a>
-                <a href="https://api.whatsapp.com/send?phone=5511999445321" target="_blank"><p>(11) 99944-5321</p></a>
-                </div>
-                <div class="icon">
-                <a href="https://www.linkedin.com/in/liaonaga/" target="_blank">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/liaonaga/" target="_blank">
-                    <p>Linkedin</p>
-                </a>
-                <a href="https://www.linkedin.com/in/liaonaga/" target="_blank">
-                    <p>@liaonaga</p>
-                </a>
-                </div>
-                <div class="icon">
-                <a href="https://github.com/liaonaga" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="https://github.com/liaonaga" target="_blank">
-                    <p>Github</p>
-                </a>
-                <a href="https://github.com/liaonaga" target="_blank">
-                    <p>@liaonaga</p>
-                </a>
-                </div>
-            </div>
-            </div>
+        </div>
     </section>
 
     <footer>

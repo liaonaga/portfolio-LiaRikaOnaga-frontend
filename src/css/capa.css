@@ -1,0 +1,119 @@
+.capa .full-screen {
+    min-height: 86vh;
+    padding: 50px 0;
+}
+
+.capa .texto-capa {
+    letter-spacing: 2px;
+}
+.capa .texto-capa p {
+    margin-bottom: 15px;
+    font-size: var(--fonte-normal);
+    font-family: var(--fonte-primaria);
+    font-weight: 500;
+}
+.capa .texto-capa h1 {
+    margin-bottom: 15px;
+    font-size: var(--fonte-gigante);
+    font-family: var(--fonte-primaria);
+    font-weight: 700;
+}
+.capa .texto-capa h2 {
+    margin-bottom: 30px;
+    font-size: var(--fonte-extra-grande);
+    font-family: var(--fonte-primaria);
+    font-weight: 700;
+}
+.capa .texto-capa .descricao-capa {
+    margin-bottom: 100px;
+    font-size: var(--fonte-normal);
+    font-family: var(--fonte-primaria);
+    font-weight: 500;
+}
+
+.capa .texto-capa,
+.capa .imagem-capa,
+.sobre .texto-sobre,
+.sobre .imagem-sobre{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+}
+
+.capa .imagem-capa{
+    color: var(--cor-primaria-clara);
+}
+
+.botao-capa{
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--cor-cinza-escuro);
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    transition: 0.2s;
+    background-color: var(--cor-primaria);
+}
+
+.botao-capa:hover{
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+@media(max-width: 1280px){
+    .capa .texto-capa{
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+        padding: var(--mobile-padding);
+    }
+    .capa .imagem-capa{
+        display: none;
+    }
+    .capa .full-screen{
+        min-height: 50vh;
+    }
+
+    .capa .texto-capa h2 {
+        margin-bottom: 30px;
+        font-size: var(--fonte-grande);
+        font-family: var(--fonte-primaria);
+        font-weight: 700;
+    }
+
+}
+
+/*   SOBRE   */
+
+.sobre {
+    min-height: 86vh;
+}
+
+.sobre .imagem-sobre{
+    position: relative;
+    background-color: ;
+}
+
+.sobre .imagem-sobre .img-box{
+    background-color: var(--cor-secundaria);
+    max-width: 450px;
+    margin: auto;
+    border-radius: 5%;
+    position: relative;
+}
+
+.sobre .imagem-sobre .img-box img{
+    border-radius: 5%;
+    max-width: 50%;
+    transition: 0.2s ease;
+}
+
+.sobre .imagem-sobre .img-box:hover{
+    position: absolute;
+    right: -5px;
+}
+.sobre .imagem-sobre .img-box img:hover{
+    position: absolute;
+    right: 5px;
+}
