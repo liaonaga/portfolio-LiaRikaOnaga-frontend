@@ -27,6 +27,7 @@ a:hover{
 
 .row{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .justify-content-betweeen {
@@ -38,6 +39,6 @@ a:hover{
 }
 
 .container{
-    max-width: 900px;
-    margin: 0 auto;
+    max-width: 1140px;
+    margin: auto;
 }

@@ -140,10 +140,11 @@
     .header nav ul {
         display: none;
         background-color: var(--cor-branca);
-        padding: 30px 30px 120px 120px;
-        border-radius: 0 0 0 150%;
-
+        padding: 20px;
+        border-radius: 10%;
+        margin-top: 50px;
         transition: 0.2s;
+        box-shadow: -2px 1px 20px rgba(0, 0, 0, 0.131);
     }
 
     .header nav ul li a {
