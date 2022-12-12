@@ -8,18 +8,8 @@
     font-family: 'Inconsolata', monospace;
 }
 
-html {
-    font-size: 62.5%;
-    /*para ficar mais fácil de trabalhar com font-size REM*/
-    color: var(--cor-cinza-escuro);
-    font-weight: 300;
-}
 
-body{
-    background-color: var(--cor-branca);
-    font-family: var(--fonte-primaria);
-    font-size: var(--fonte-normal);
-}
+
 
 a:hover{
     user-select: none;
@@ -41,4 +31,5 @@ a:hover{
 .container{
     max-width: 1140px;
     margin: auto;
+    padding: 0 15px;
 }

@@ -3,18 +3,14 @@
 }
 
 .header .logo{
-    font-family: var(--fonte-secundaria);
-    font-size: var(--fonte-grande);
-    color: var(--cor-cinza-escuro);
     font-weight: bold;
     line-height: 65px;
     letter-spacing: 1px;
-    transition: 0.2s;
+    transition: 1s;
     
 }
 
 .header a:hover .logo{
-    color: var(--cor-primaria);
     text-decoration: underline;
 }
 
@@ -26,34 +22,27 @@
     text-transform: capitalize;
     font-size: 2rem;
     font-weight: 600;
-    color: var(--cor-cinza-escuro);
     letter-spacing: 1px;
     padding: 10px 20px;
     transition: 0.2s;
 }
 
 .header nav ul li a:hover{
-    color: var(--cor-primaria);
     font-size: 2.1rem;
 }
 
 .header nav .botao{
-    background-color: var(--cor-primaria);
     border-radius: 5px;
 
     transform: 0.2s;
 }
 
-.header nav .botao:hover {
-    background-color: var(--cor-primaria);
-    color: #fff;
-}
 
 /*   MENU HAMBURGUER   */
 .header .menu {
     display: none;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     align-self: flex-end;
     position: absolute;
 }
@@ -64,19 +53,16 @@
 }
 
 .header .hamburguer {
-    background-color: var(--cor-cinza-escuro);
     position: relative;
     display: block;
     width: 30px;
     height: 2px;
-    top: 29px;
-    left: 15px;
+    top: 6px;
     transition: 0.2s ease-in-out;
 }
 
 .header .hamburguer:before,
 .header .hamburguer:after {
-    background-color: var(--cor-cinza-escuro);
     content: "";
     display: block;
     width: 100%;
@@ -99,25 +85,25 @@
 
 .header input:checked ~ label .hamburguer {
     transform: rotate(45deg);
-    background-color: var(--cor-primaria);
 }
 .header input:checked ~ label .hamburguer:before {
     transform: rotate(90deg);
     top: 0;
-    background-color: var(--cor-primaria);
 }
 
 .header input:checked ~ label .hamburguer:after {
     transform: rotate(90deg);
     bottom: 0;
-    background-color: var(--cor-primaria);
 }
 
-@media(max-width: 1280px){
-    .header {
-        padding: var(--mobile-padding);
+@media(max-width: 960px){
+    .header{
+        max-height: 80px;
     }
 
+    .header .logo{
+        line-height: 40px;
+    }
     .header .menu{
         display: block;
     }
@@ -139,7 +125,6 @@
 
     .header nav ul {
         display: none;
-        background-color: var(--cor-branca);
         padding: 20px;
         border-radius: 10%;
         margin-top: 50px;
@@ -148,13 +133,8 @@
     }
 
     .header nav ul li a {
-        color: var(--cor-cinza-escuro);
         text-align: center;
         padding: 20px;
         display: block;
-    }
-
-    .header nav .botao{
-        background-color: var(--cor-primaria);
     }
 }

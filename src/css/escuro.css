@@ -1,0 +1,77 @@
+html {
+    font-size: 62.5%;
+    /*para ficar mais fácil de trabalhar com font-size REM*/
+    color: var(--cor-branca);
+    font-weight: 300;
+}
+
+body{
+    background-color: var(--cor-cinza-escuro);
+    font-family: var(--fonte-primaria);
+    font-size: var(--fonte-normal);
+}
+
+.header .logo{
+    font-family: var(--fonte-secundaria);
+    font-size: var(--fonte-grande);
+    color: var(--cor-branca);    
+}
+
+.header a:hover .logo{
+    color: var(--cor-primaria);
+}
+
+.header nav li a{
+    color: var(--cor-branca);
+}
+
+.header nav ul li a:hover{
+    color: var(--cor-primaria);
+}
+
+.header nav .botao{
+    background-color: var(--cor-primaria);
+}
+
+.header nav .botao:hover {
+    background-color: var(--cor-primaria);
+}
+
+.header .hamburguer {
+    background-color: var(--cor-cinza-escuro);
+}
+
+.header .hamburguer:before,
+.header .hamburguer:after {
+    background-color: var(--cor-cinza-escuro);
+}
+
+.header input:checked ~ label .hamburguer {
+    background-color: var(--cor-primaria);
+}
+.header input:checked ~ label .hamburguer:before {
+    background-color: var(--cor-primaria);
+}
+
+.header input:checked ~ label .hamburguer:after {
+    background-color: var(--cor-primaria);
+}
+.header nav .botao:hover {
+    color: #fff;
+}
+
+
+
+@media(max-width: 960px){
+    .header nav ul {
+        background-color: var(--cor-branca);
+    }
+
+    .header nav ul li a {
+        color: var(--cor-cinza-escuro);
+    }
+
+    .header nav .botao{
+        background-color: var(--cor-primaria);
+    }
+}

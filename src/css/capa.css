@@ -3,21 +3,34 @@
     padding: 50px 0;
 }
 
+/* .capa .texto-capa,
+    .sobre .texto-sobre,
+    .projetos,
+    .habilidades,
+    .contato,
+    .footer {
+        transform: 1s;
+    } */
+
 .capa .texto-capa {
     letter-spacing: 2px;
+    flex: 2;
 }
+
 .capa .texto-capa p {
     margin-bottom: 15px;
     font-size: var(--fonte-normal);
     font-family: var(--fonte-primaria);
     font-weight: 500;
 }
+
 .capa .texto-capa h1 {
     margin-bottom: 15px;
     font-size: var(--fonte-gigante);
     font-family: var(--fonte-primaria);
     font-weight: 700;
 }
+
 .capa .texto-capa h2,
 .secao-titulo {
     margin-bottom: 30px;
@@ -25,9 +38,24 @@
     font-family: var(--fonte-primaria);
     font-weight: 700;
 }
+
+.secao-titulo {
+    margin-top: 50px;
+}
+
+.secao-titulo::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 15px;
+    height: 2px;
+    background-color: var(--cor-primaria-clara);
+}
+
 .capa .texto-capa .descricao-capa,
 .sobre .texto-sobre .sobre-container {
     margin-bottom: 100px;
+    transition: 1s;
     font-size: var(--fonte-normal);
     font-family: var(--fonte-primaria);
     font-weight: 500;
@@ -36,10 +64,10 @@
 .capa .texto-capa,
 .capa .imagem-capa,
 .sobre .texto-sobre,
-.sobre .imagem-sobre{
+.sobre .imagem-sobre,
+.projetos .projeto-card{
     flex: 0 0 50%;
     max-width: 50%;
-    padding: 0 15px;
 }
 
 .capa .imagem-capa{
@@ -65,38 +93,11 @@
     color: #fff;
 }
 
-@media(max-width: 1280px){
-    .capa .texto-capa{
-        flex: 0 0 100%;
-        max-width: 100%;
-        text-align: center;
-        padding: var(--mobile-padding);
-    }
-    .capa .imagem-capa{
-        display: none;
-    }
-    .capa .full-screen{
-        min-height: 50vh;
-    }
-
-    .capa .texto-capa h2 {
-        margin-bottom: 30px;
-        font-size: var(--fonte-grande);
-        font-family: var(--fonte-primaria);
-        font-weight: 700;
-    }
-
-}
 
 /*   SOBRE   */
 
-.sobre {
-    min-height: 86vh;
-}
-
 .sobre .imagem-sobre{
     position: relative;
-    background-color: ;
 }
 
 .sobre .imagem-sobre .img-box{
@@ -128,12 +129,113 @@
 
 
 
-.secao-titulo::after {
-    content: "";
-    display: block;
+
+.projeto-card .projeto-card-container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    padding: 20px;
+    
+    background-color: #fff;
+    
     position: relative;
-    top: 5px;
-    width: 50%;
-    height: 1px;
-    background-color: var(--cor-primaria-clara);
+}
+
+.projeto-card .projeto-card-container img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.projetos .projeto-card .projeto-info{
+    position: absolute;
+    bottom: 50px;
+}
+
+.projetos .projeto-card .projeto-titulo{
+    font-size: var(--fonte-extra-grande);
+    font-family: var(--fonte-primaria);
+    font-weight: 700;
+}
+
+.projetos .projetos-links a{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projetos .projetos-links{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px;
+    justify-content: center;   
+}
+
+.projetos .projetos-links .icone{
+    width: 30px;
+    height: 30px;
+    color: var(--cor-cinza-escuro);
+}
+
+.projetos .projeto-card .projeto-descricao{
+    font-size: var(--fonte-normal);
+    font-family: var(--fonte-primaria);
+    font-weight: 500;
+
+    position: absolute;
+
+}
+
+.projetos .projeto-card .projeto-detalhes{
+    display: none;
+}
+
+.projetos .projeto-card .projeto-detalhes:hover{
+    display:contents;
+}
+
+@media(max-width: 650px){
+    .capa .full-screen, 
+    .sobre .full-screen{
+        min-height: 50vh;
+    }
+
+    .capa .texto-capa,
+    .sobre .texto-sobre,
+    .projetos,
+    .habilidades,
+    .contato,
+    .footer {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .capa .imagem-capa{
+        display: none;
+    }
+
+    .capa .texto-capa .descricao-capa,
+.sobre .texto-sobre .sobre-container {
+    margin-bottom: 50px;
+}
+
+    .capa .texto-capa h2 {
+        margin-bottom: 30px;
+        font-size: var(--fonte-grande);
+        font-family: var(--fonte-primaria);
+        font-weight: 700;
+    }
+
+    .sobre .imagem-sobre{
+        margin: 30px auto;
+        flex: 1;
+        max-width: 90%;
+    }
+
+   
 }
