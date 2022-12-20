@@ -55,11 +55,6 @@ body{
     color: #fff;
 }
 
-.projetos-links .icone:hover{
-    color: var(--cor-secundaria);
-}
-
-
 @media(max-width: 960px){
     .header nav ul {
         background-color: var(--cor-branca);

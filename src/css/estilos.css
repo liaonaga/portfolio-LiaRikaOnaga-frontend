@@ -138,9 +138,11 @@
         box-shadow: -2px 1px 20px rgba(0, 0, 0, 0.131);
     }
 
-    .header nav ul li a {
+    .header nav ul li a, 
+    .projetos-links {
         text-align: center;
         padding: 20px;
         display: block;
     }
+
 }
