@@ -11,7 +11,7 @@
 .header .logo{
     line-height: 60px;
     letter-spacing: 1px;
-    transition: 1s;
+    transition: .3s;
     font-family: var(--fonte-secundaria);
     font-size: var(--fonte-grande);
     

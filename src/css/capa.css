@@ -39,18 +39,7 @@
     font-weight: 700;
 }
 
-.secao-titulo {
-    margin-top: 50px;
-}
 
-.secao-titulo::after {
-    content: "";
-    display: block;
-    position: relative;
-    top: 15px;
-    height: 2px;
-    background-color: var(--cor-primaria-clara);
-}
 
 .capa .texto-capa .descricao-capa,
 .sobre .texto-sobre .sobre-container {
@@ -94,9 +83,18 @@
 
 /*   SOBRE   */
 
-.texto-sobre p{
+
+.sobre .secao-titulo,
+.sobre ul li{
+}
+
+.sobre .texto-sobre p{
     font-size: 1.8rem;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+.sobre .botao-sobre{
+    margin-bottom: 10px;
 }
 
 .sobre .imagem-sobre{
@@ -190,6 +188,29 @@
 .projetos .projeto-card .projeto-detalhes:hover{
     display:contents;
 }
+/*   HABILIDADES   */
+
+.habilidades-icones{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.habilidades .habilidade-linguagem{
+    margin: 10px;
+    padding: 10px;
+    background-color: aqua;
+}
+
+.habilidades .habilidade-texto{
+    display: none;
+}
+
+
+/*   CONTATO   */
+
+
+/*   FOOTER   */
 
 .footer{
     background-color: var(--cor-preto);
@@ -238,6 +259,15 @@
 /* .contato-icon a i{
     box-shadow: 3px 3px #2f2f30, -3px -3px 3px #5c5959;
 } */
+
+@media(max-width: 960px) {
+    .projetos .projeto-card{
+            flex: 0 0 100%;
+            max-width: 100%;
+            text-align: center;
+        }
+    }
+
 
 @media(max-width: 650px){
     .capa .full-screen, 

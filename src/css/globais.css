@@ -40,7 +40,7 @@ a:hover{
     align-items: center;
     position: relative;
     justify-content: left; 
-    margin-top: 30px;  
+    margin-top: 50px;  
     
 }
 
@@ -75,4 +75,24 @@ a:hover{
 
 .inner-shadow {
     box-shadow: inset 3px 3px #2f2f30, inset -3px -3px 3px #5c5959;
+}
+
+.fundo-claro{
+    background-color: var(--cor-branca);
+    padding: 50px 0 50px 0;
+
+    color: var(--cor-cinza-escuro);
+}
+
+.secao-titulo {
+    margin: 50px 0;
+}
+
+.secao-titulo::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 15px;
+    height: 2px;
+    background-color: var(--cor-primaria-clara);
 }
