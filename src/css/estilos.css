@@ -7,7 +7,8 @@
     line-height: 65px;
     letter-spacing: 1px;
     transition: 1s;
-    
+    font-family: var(--fonte-secundaria);
+    font-size: var(--fonte-grande);
 }
 
 .header a:hover .logo{
@@ -102,10 +103,15 @@
     }
 
     .header .logo{
-        line-height: 40px;
+        line-height: 30px;
+        font-size: var(--fonte-normal);
     }
     .header .menu{
         display: block;
+    }
+
+    .header .hamburguer{
+        top: 0;
     }
 
     .header nav ul{

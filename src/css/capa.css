@@ -160,26 +160,8 @@
     font-weight: 700;
 }
 
-.projetos .projetos-links a{
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.projetos .projetos-links{
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin: 10px;
-    justify-content: center;   
-}
 
-.projetos .projetos-links .icone{
-    width: 30px;
-    height: 30px;
-    color: var(--cor-cinza-escuro);
-}
 
 .projetos .projeto-card .projeto-descricao{
     font-size: var(--fonte-normal);
@@ -197,6 +179,8 @@
 .projetos .projeto-card .projeto-detalhes:hover{
     display:contents;
 }
+
+
 
 @media(max-width: 650px){
     .capa .full-screen, 

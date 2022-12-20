@@ -12,8 +12,6 @@ body{
 }
 
 .header .logo{
-    font-family: var(--fonte-secundaria);
-    font-size: var(--fonte-grande);
     color: var(--cor-branca);    
 }
 
@@ -57,6 +55,9 @@ body{
     color: #fff;
 }
 
+.projetos-links .icone:hover{
+    color: var(--cor-secundaria);
+}
 
 
 @media(max-width: 960px){
