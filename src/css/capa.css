@@ -190,6 +190,10 @@
     display:contents;
 }
 
+.footer{
+    background-color: var(--cor-cinza-escuro);
+}
+
 .contato-infos{
     display: flex;
     flex-wrap: wrap;
@@ -200,19 +204,21 @@
 }
 
 .contato-icon{
-    background-color: blueviolet;
+    background-color: var(--cor-cinza-claro);
+    color: var(--cor-branca);
+
     margin: 10px;
     
     width: 40px;
     height: 40px;
     line-height: 40px;
+    text-align: center;
     
 }
 
-.contato-icon a i{
-    text-decoration: none;
-    color: var(--cor-branca);
-}
+/* .contato-icon a i{
+    box-shadow: 3px 3px #2f2f30, -3px -3px 3px #5c5959;
+} */
 
 @media(max-width: 650px){
     .capa .full-screen, 
