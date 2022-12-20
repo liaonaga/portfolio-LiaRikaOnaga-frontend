@@ -37,13 +37,10 @@ body{
     background-color: var(--cor-primaria);
 }
 
-.header .hamburguer {
-    background-color: var(--cor-cinza-escuro);
-}
-
+.header .hamburguer,
 .header .hamburguer:before,
 .header .hamburguer:after {
-    background-color: var(--cor-cinza-escuro);
+    background-color: var(--cor-branca);
 }
 
 .header input:checked ~ label .hamburguer {
