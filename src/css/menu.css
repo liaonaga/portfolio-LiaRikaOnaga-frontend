@@ -6,7 +6,7 @@ header nav ul li a {
     font-size: 1.6rem;
     font-weight: 500;
     padding: 10px 30px;
-    border-radius: 50px;
+    border-radius: 3px;
     transition: 0.3s;
 }
 

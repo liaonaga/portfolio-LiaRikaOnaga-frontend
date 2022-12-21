@@ -40,7 +40,7 @@
 
 
 .header nav .botao{
-    border-radius: 5px;
+    border-radius: 3px;
     color: var(--cor-preto);
     transform: 0.2s;
 }
@@ -140,7 +140,7 @@
     .header nav ul {
         display: none;
         padding: 20px;
-        border-radius: 10%;
+        border-radius: 3px;
         margin-top: 50px;
         transition: 0.2s;
         box-shadow: -2px 1px 20px rgba(0, 0, 0, 0.131);

@@ -68,6 +68,7 @@
     text-transform: capitalize;
     font-size: 1.8rem;
     font-weight: 600;
+    border-radius: 3px;
     color: var(--cor-cinza-escuro);
     padding: 10px 20px;
     transition: 0.2s;
@@ -140,33 +141,63 @@
 
 
 .projeto-card .projeto-card-container{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 15px;
-    padding: 20px;
-    
-    background-color: #fff;
-    
     position: relative;
+
+    display: flex;
+    
+    text-align: center;
+    margin: 15px;
+    
+    border-radius: 3px;
 }
 
 .projeto-card .projeto-card-container img{
     width: 100%;
-    margin-bottom: 30px;
+    border-radius: 3px;
 }
 
 .projetos .projeto-card .projeto-info{
     position: absolute;
-    bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+
+
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.projetos .projeto-card .projeto-info:hover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    border-radius: 3px;
+
+    background-color: var(--cor-preto);
 }
 
 .projetos .projeto-card .projeto-titulo{
     font-size: var(--fonte-extra-grande);
     font-family: var(--fonte-primaria);
     font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.projetos .projeto-card .projeto-linguagens{
+    font-size: var(--fonte-grande);
+    color: var(--cor-secundaria);
+    font-weight: 500;
 }
 
 
@@ -243,10 +274,12 @@
 
     margin: 10px;
     
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
     text-align: center;
+    font-size: var(--fonte-grande);
+
     transition: 0.2s;
     
 }
@@ -319,6 +352,7 @@
     .secao-titulo{
         font-size: var(--fonte-grande);
         margin-bottom: 50px;
+        text-align: center;
     }
 
     .projetos-links {
@@ -333,6 +367,10 @@
 
     .projeto .row{
         flex-direction: column;
+    }
+
+    .projetos .projeto-card .projeto-titulo{
+        font-size: var(--fonte-grande);
     }
 }
 
