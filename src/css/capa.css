@@ -260,6 +260,12 @@
     box-shadow: 3px 3px #2f2f30, -3px -3px 3px #5c5959;
 } */
 
+
+.contato .form{
+    display: flex;
+    max-width: 100%;
+}
+
 @media(max-width: 960px) {
     .projetos .projeto-card{
             flex: 0 0 100%;
