@@ -1,4 +1,7 @@
-.capa .full-screen {
+.capa .full-screen,
+.sobre .full-screen,
+.projetos .full-screen,
+.habilidades .full-screen {
     min-height: 86vh;
     padding: 50px 0;
 }
@@ -89,6 +92,10 @@
 .sobre ul li{
 }
 
+.sobre .full-screen{
+
+}
+
 .sobre .texto-sobre p{
     font-size: 1.8rem;
     margin-bottom: 15px;
@@ -106,12 +113,11 @@
 .sobre .imagem-sobre .img-box{
     border: solid 3px var(--cor-primaria);
     
-    
     margin: auto;
     border-radius: 2%;
     min-height: 305px;
     max-width: 230px;
-    align-items: center;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -153,7 +159,7 @@
 
 .projeto-card .projeto-card-container img{
     width: 100%;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .projetos .projeto-card .projeto-info{
@@ -166,8 +172,7 @@
 
     width: 100%;
     height: 100%;
-    border-radius: 3px;
-
+    border-radius: 4px;
 
     opacity: 0;
     transition: 0.3s;
@@ -220,6 +225,7 @@
     display:contents;
 }
 /*   HABILIDADES   */
+
 
 .habilidades-icones{
     display: flex;
