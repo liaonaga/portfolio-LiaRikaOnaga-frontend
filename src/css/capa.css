@@ -491,6 +491,10 @@
         margin-top: 30px;
         padding: 0;
     }
+
+    .contato .form-container{
+        padding: 0;
+    }
 }
 
 @media(max-width: 310px){
