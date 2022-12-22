@@ -158,7 +158,7 @@
 }
 
 .projeto-card .projeto-card-container img{
-    width: 100%;
+    width: 95%;
     border-radius: 5px;
 }
 
@@ -389,6 +389,10 @@
 
     .projetos .projeto-card .projeto-titulo{
         font-size: var(--fonte-grande);
+    }
+
+    .projetos .projeto-card .projeto-linguagens{
+        font-size: var(--fonte-normal);
     }
 
     .projetos .projeto-card .projetos-links{
