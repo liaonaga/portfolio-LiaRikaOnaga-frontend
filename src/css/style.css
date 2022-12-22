@@ -31,7 +31,10 @@ header .header-container {
 
 header h2 {
     font-size: 1.6rem;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
     /* deixar a trasição para o hover mais suave */
 }
 
@@ -67,7 +70,10 @@ header a:hover h2 {
 }
 
 .projetos .projeto-card {
-    transition: .3s;
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
     min-width: 30%;
 }
 
@@ -113,7 +119,10 @@ header a:hover h2 {
 	display: block;
 	max-width: 300px;
 	margin: 20px auto 40px auto;
-	transition: .3s;
+	transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
 	
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
