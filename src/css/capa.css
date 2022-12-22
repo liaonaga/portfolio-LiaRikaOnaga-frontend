@@ -152,7 +152,7 @@
     display: flex;
     
     text-align: center;
-    margin: 15px;
+    margin: 15px auto;
     
     border-radius: 3px;
 }
@@ -230,17 +230,25 @@
 
 /*   HABILIDADES   */
 
-
 .habilidades-icones{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
+.habilidades .habilidade-linguagem img{
+    filter: grayscale(1);
+    transition: .3s;
+}
+
+.habilidades .habilidade-linguagem img:hover{
+    filter: grayscale(0);
+}
+
+
 .habilidades .habilidade-linguagem{
     margin: 10px;
     padding: 10px;
-    background-color: aqua;
 }
 
 .habilidades .habilidade-texto{
