@@ -195,9 +195,11 @@
 .projetos .projeto-card .projeto-titulo{
     font-size: var(--fonte-extra-grande);
     font-family: var(--fonte-primaria);
+    color: var(--cor-branca);
     font-weight: 700;
     margin-bottom: 10px;
 }
+
 
 .projetos .projeto-card .projeto-linguagens{
     font-size: var(--fonte-grande);
@@ -224,6 +226,8 @@
 .projetos .projeto-card .projeto-detalhes:hover{
     display:contents;
 }
+
+
 /*   HABILIDADES   */
 
 
@@ -377,6 +381,11 @@
 
     .projetos .projeto-card .projeto-titulo{
         font-size: var(--fonte-grande);
+    }
+
+    .projetos .projeto-card .projetos-links{
+        margin-top: 30px;
+        padding: 0;
     }
 }
 
