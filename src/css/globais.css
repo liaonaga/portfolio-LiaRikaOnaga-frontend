@@ -32,6 +32,7 @@ a:hover{
     max-width: 1140px;
     margin: auto;
     padding: 0 15px;
+
 }
 
 
@@ -54,7 +55,7 @@ a:hover{
     text-align: center;
 
     transition: all 0.3s ease;
-
+    
     
 }
 
@@ -91,13 +92,13 @@ a:hover{
 .fundo-claro{
     background-color: var(--cor-branca);
     padding: 50px 0 50px 0;
-
+    
     color: var(--cor-cinza-escuro);
 }
 
 .secao-titulo {
     margin: 50px 0;
-    padding-bottom: 30px;
+    padding: 100px 0 100px 0;
 }
 
 .secao-titulo::after {
@@ -107,4 +108,10 @@ a:hover{
     top: 15px;
     height: 2px;
     background-color: var(--cor-primaria-clara);
+}
+
+@media(max-width: 650px){
+    .secao-titulo {
+        padding: 30px 0 30px 0;
+    }
 }
